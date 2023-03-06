@@ -6,15 +6,15 @@ public class Player : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator playerAnimator;
-    public AudioSource audiosource;
+    AudioSource audioSource;
 
-   
+  
     void Start()
     {
-        audiosource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         playerRb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        //Al iniciar 
+       
     }
 
     void Update()
@@ -28,16 +28,28 @@ public class Player : MonoBehaviour
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
         // FUNCIONA PARA EL MOVIMIENTO DEL PERSONAJE
 
-        if(moveX !=0 || moveY != 0)
+        if (moveX != 0 || moveY != 0)
         {
-            if (!audiosource.isPlaying)
+            if (!audioSource.isPlaying)
             {
-                audiosource.Play();
+                audioSource.Play();
             }
         }
         else
         {
-            audiosource.Stop();
+            audioSource.Stop();
+        }
+
+        if (moveX !=-0 || moveY !=-0)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 

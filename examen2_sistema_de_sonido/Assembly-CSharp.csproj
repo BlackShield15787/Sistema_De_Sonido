@@ -58,6 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\AudioSetup.cs" />
+    <Compile Include="Assets\Scripts\AudioTracks.cs" />
+    <Compile Include="Assets\Scripts\AudioUtilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
