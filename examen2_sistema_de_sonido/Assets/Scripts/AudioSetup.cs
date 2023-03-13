@@ -17,6 +17,6 @@ public class AudioSetup : MonoBehaviour
             AudioUtilities.AddTrack(item.trackTitle, item.trackClip);
 
         }
-        AudioUtilities.PlayTrack(trackname);
+        AudioUtilities.PlayTrack(trackname); // este codigo cambia el Track desde la pestaña de project 
     }
 }

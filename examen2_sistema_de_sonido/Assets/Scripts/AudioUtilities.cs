@@ -13,7 +13,7 @@ public static void SetAudioSource(AudioSource source)
 
     public static void AddTrack(string trackTitle,AudioClip trackClip)
     {
-        tracks.Add(trackTitle, trackClip);
+        tracks.Add(trackTitle, trackClip); //sirve parab añadir mas Tracks al project
     }
     public static void PlayTrack(string trackTitle)
     {
@@ -26,5 +26,5 @@ public static void SetAudioSource(AudioSource source)
         {
             Debug.Log($"Traack:{trackTitle} does not");
         }
-    }
+    }// inicia el track dependiendo de cual hayas elegido en el project
 }

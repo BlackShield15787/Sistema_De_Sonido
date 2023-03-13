@@ -8,9 +8,4 @@ public class AudioTracks
     public string trackTitle;
     public AudioClip trackClip;
 
-
-
-
-
-
-}
+} //la sentencia con el nombre de los audios
